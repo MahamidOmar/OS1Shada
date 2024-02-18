@@ -128,4 +128,19 @@ class Command {
   // TODO: Add your extra methods if needed
 };
 
+class BuiltInCommand : public Command {
+public:
+    BuiltInCommand(const char* cmd_line): Command(cmd_line){}
+    virtual ~BuiltInCommand() {}
+};
+
+class ChangeDirCommand : public BuiltInCommand {
+// TODO: Add your data members public:
+public:
+    ChangeDirCommand(const char* cmd_line): BuiltInCommand(cmd_line){}
+    virtual ~ChangeDirCommand() {}
+    void execute() override;
+};
+
+
 #endif //SMASH_COMMAND_H_
