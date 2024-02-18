@@ -1,6 +1,6 @@
 #include <iostream>
 #include "signals.h"
-#include "SmallShell.h"
+#include "Commands.h"
 #include <csignal>
 
 

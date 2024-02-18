@@ -1,7 +1,7 @@
 #include <iostream>
 #include <signal.h>
 #include "signals.h"
-#include "SmallShell.h"
+#include "Commands.h"
 
 int main(int argc, char* argv[]) {
     if(signal(SIGINT , ctrlCHandler)==SIG_ERR) {
